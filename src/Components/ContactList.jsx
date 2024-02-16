@@ -27,7 +27,7 @@ export default function ContactList({ setSelectedContactId }) {
   }, []);
 
   return (
-    <table className='tableStyles'>
+    <table>
       <thead>
         <tr>
           <th colSpan='3'>Contact List</th>
@@ -35,9 +35,9 @@ export default function ContactList({ setSelectedContactId }) {
       </thead>
       <tbody>
         <tr>
-          <td className='info'>Name</td>
-          <td className='info'>Email</td>
-          <td className='info'>Phone</td>
+          <td>Name</td>
+          <td>Email</td>
+          <td>Phone</td>
         </tr>
         {contacts.map((contact) => {
           return (
